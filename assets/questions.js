@@ -23,26 +23,26 @@ const questions = [
     },
     // question 4
     {
-        title: "<strong>Question 4:</strong>: What are all the looping structures in JavaScript?",
+        title: "<strong>Question 4:</strong> What are all the looping structures in JavaScript?",
         choices: ["For, Else, Do-while loops.", "Else, If, For", "For, While, Do-while loops."],
         answer: "For, While, Do-while loops."
     },
     // question 5
     {
-        title: "<strong>Question 5:</strong>: What is an undefined value in JavaScript?",
+        title: "<strong>Question 5:</strong> What is an undefined value in JavaScript?",
         choices: ["A variable assigned to a value.", "The variable in the code doesn't exist",
             "A value equal to zero."],
         answer: "The variable in the code doesn't exist"
     },
     // question 6
     {
-        title: "<strong>Question 6:</strong>: What does DOM stand for?",
+        title: "<strong>Question 6:</strong> What does DOM stand for?",
         choices: ["Document Object Model", "Deployment Object Method", "Deployed Object Model"],
         answer: "Document Object Model"
     },
     // question 6
     {
-        title: "<strong>Question 7:</strong>: You call a ____ to run a task/procedure.",
+        title: "<strong>Question 7:</strong> You call a ____ to run a task/procedure.",
         choices: ["object", "function", "constant"],
         answer: "function"
     }
