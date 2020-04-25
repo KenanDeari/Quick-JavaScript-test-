@@ -1,0 +1,34 @@
+/* sets scores & time left to both corners of screens */
+.navbar-container {
+    max-width: none;
+    color: black;
+    size: 25px;
+}
+body {
+    background-image: url(https://bgfons.com/uploads/stone/stone_texture180.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-size: 43px;
+    color: black
+}
+p {
+    font-size: 26px;
+}
+ul {
+    font-size: 22px;
+    background-color: wheat;
+    margin: auto;
+    padding: auto;
+}
+
+.container {
+    background-color: wheat;
+    margin: auto;
+    padding: 10px;
+    border-radius: 27px;
+}
+.clearHighScore {
+    margin: auto;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <!-- navbar created below using bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container navbar-container mx-0">
+            <div class="row w-100">
+                <div class="col-4 col-md-2">
+                    <button type="button" id="highscore-button" class="btn btn-info">View High Scores</button>
+                </div>
+                <div class="col-3 col-md-7"></div>
+                <div class="col-5 col-md-3">
+                    <!-- navbar w/ time left created with bootstrap -->
+                    <form>
+                        <div class="form-group row">
+                            <label for="time-left" class="col-sm-7 col-form-label">Time Remaining</label>
+                            <div class="col-sm-5">
+                                <input type="number" readonly class="form-control" id="time-left" placeholder="0">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </nav>
+    <!-- body container created to hold instructions. -->
+    <div id="body-container" class="container">
+        <div class="row mb-3">
+            <div class="col-lg-12 text-center">
+                <h1>Code Quiz</h1>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-lg-12 text-center">
+                <p>Attempt to answer all code-related questions within the required time-limit!
+                    <br>
+                    <h2>Test Rules:</h2>
+                    <ul>
+                        <hr>
+                        <li>You will have 105 seconds to complete the quiz.</li> <br>
+                        <hr>
+                        <li>Incorrect answers will result in the 10 seconds being deducted from the total time
+                            remaining.</li> <br>
+                        <hr>
+                        <li>The less time on the clock, the better your score!</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <!-- start button for test -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button id="start-button" type="button" class="btn btn-secondary btn-lg">Start
+                    Quiz</button> <br>
+            </div>
+        </div>
+    </div>
+
+    <div id="test-container" class="container d-none"></div>
+
+
+    <div id="final-container" class="container d-none">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <br>
+                <form>
+                    <div class="form-group row">
+                        <label for="final-score" class="col-sm-7 col-form-label">Final Score</label>
+                        <div class="col-sm-5">
+                            <input type="number" readonly class="form-control" id="final-score" placeholder="0">
+                        </div>
+                    </div>
+                </form>
+                <!-- bootstrap form inputted for inital entry -->
+                <form>
+                    <div class="form-group">
+                        <label for="initials-entry">Initials</label>
+                        <input type="text" class="form-control" id="initials-entry" placeholder="Enter initials">
+                    </div>
+                    <button id="submit-init" type="button" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- created & centered container that holds all scores -->
+    <div id="highscore-container" class="container d-none">
+        <div class="row">
+            <div class="col-2"></div>
+            <div id="highscore-table" class="col-8">
+                <div class="row">
+                    <div class="col-lg-12 text-center"> <br>
+                        <h2>Your Highscores!</h2>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <br><br><Br><br><br>
+            <!-- clear highscores & go back buttons created -->
+            <div id="clear-box" class="container"> <BR>
+                <div class="row justify-content-center">
+                    <a href="index.html" class="back-button">Go Back</a> <br>
+                    <hr>
+                    <button id="clearHighScore">Clear Highscores</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
