@@ -1,13 +1,17 @@
+
 /* sets scores & time left to both corners of screens */
 .navbar-container {
     max-width: none;
     color: black;
     size: 25px;
+    
 }
 body {
     background-image: url(https://bgfons.com/uploads/stone/stone_texture180.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-attachment: fixed;
 }
 h1 {
     font-size: 43px;

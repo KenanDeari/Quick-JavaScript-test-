@@ -21,14 +21,14 @@ function initTest() {
 
 
         bodyContainer.setAttribute("class", "container d-none");
+        testContainer.setAttribute("class", "container");
         var newRow = null;
         var colTwo = null;
         var newHeader = null;
         var buttonEl = null;
-        testContainer.setAttribute("class", "container");
         var currentQuestion = 1;
         var score = 0;
-        // quiz is set to 15 x 7 = 100 seconds in total. 
+        // quiz is set to 15 x 7 = 105 seconds in total. 
         timeLeft = numQuestions * 15;
         timeEl.setAttribute("value", timeLeft);
         // code created to cut short interval, w3 schools assisted me in the understadning of interval/clearinteval & 

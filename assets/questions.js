@@ -1,5 +1,4 @@
-// created const for questions
-const questions = [
+var questions = [
     // question 1 created below
     {
         title: "<strong>Question 1:</strong> What is the importance of Doctype in HTML",
