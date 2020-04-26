@@ -14,8 +14,6 @@ function initTest() {
     var finalContainerEl = document.getElementById("final-container");
     var submitButtonEl = document.getElementById("submit-init");
     var clearHighScore = document.getElementById("clearHighScore");
-    // json var set up for local storage
-    var highScores = JSON.parse(window.localStorage.getItem("scores"));
 
     function beginQuiz() {
 
@@ -159,30 +157,31 @@ function initTest() {
         // function created to store highscores to localStorage.
         function saveScore() {
             var initialsEl = document.getElementById("initials-entry");
+            var highScores = JSON.parse(window.localStorage.getItem("scores"));
             var newHighScore = {
                 initials: initialsEl.value,
                 highScore: score
             };
             console.log(newHighScore);
-            highScores.push(newHighScore);
+            highScores.innerHTML(newHighScore);
             console.log(highScores);
             localStorage.setItem("scores", JSON.stringify(highScores));
+            window.addEventListener("click", function () { saveScore() });
+
         }
         // clear scores
         function clearScore() {
-            newHighScore = {
-                initials: "",
-                highScore: ""
-            };
-            localStorage.clear
+            clearHighScore.addEventListener("click", function () {
+                localStorage.removeItem("highscores");
+                window.location.reload();
+            });
             // localStorage.setItem("initials", "")
             // localStorage.setItem("scores", "")
 
 
         }
-
-        clearHighScore.addEventListener("click", clearScore);
         submitButtonEl.addEventListener("click", saveScore);
+        clearHighScore.addEventListener("click", clearScore);
         createQuestion(currentQuestion);
     }
     // created event listener to start tests once start is clicked
